@@ -14,6 +14,8 @@
 		D877BCE728AB86FD00A11DDC /* Birthday_tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D877BCE528AB86FD00A11DDC /* Birthday_tracker.xcdatamodeld */; };
 		D877BCE928AB86FF00A11DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D877BCE828AB86FF00A11DDC /* Assets.xcassets */; };
 		D877BCEC28AB86FF00A11DDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D877BCEA28AB86FF00A11DDC /* LaunchScreen.storyboard */; };
+		D8BBC81828AB8E8C00EBAB31 /* AddBirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BBC81728AB8E8C00EBAB31 /* AddBirthdayViewController.swift */; };
+		D8BBC81A28AB917400EBAB31 /* Birthday.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BBC81928AB917400EBAB31 /* Birthday.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		D877BCE828AB86FF00A11DDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D877BCEB28AB86FF00A11DDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D877BCED28AB86FF00A11DDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8BBC81728AB8E8C00EBAB31 /* AddBirthdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBirthdayViewController.swift; sourceTree = "<group>"; };
+		D8BBC81928AB917400EBAB31 /* Birthday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Birthday.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +65,13 @@
 				D877BCDC28AB86FD00A11DDC /* AppDelegate.swift */,
 				D877BCDE28AB86FD00A11DDC /* SceneDelegate.swift */,
 				D877BCE028AB86FD00A11DDC /* ViewController.swift */,
+				D8BBC81728AB8E8C00EBAB31 /* AddBirthdayViewController.swift */,
 				D877BCE228AB86FD00A11DDC /* Main.storyboard */,
 				D877BCE828AB86FF00A11DDC /* Assets.xcassets */,
 				D877BCEA28AB86FF00A11DDC /* LaunchScreen.storyboard */,
 				D877BCED28AB86FF00A11DDC /* Info.plist */,
 				D877BCE528AB86FD00A11DDC /* Birthday_tracker.xcdatamodeld */,
+				D8BBC81928AB917400EBAB31 /* Birthday.swift */,
 			);
 			path = "Birthday tracker";
 			sourceTree = "<group>";
@@ -142,6 +148,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D877BCE128AB86FD00A11DDC /* ViewController.swift in Sources */,
+				D8BBC81828AB8E8C00EBAB31 /* AddBirthdayViewController.swift in Sources */,
+				D8BBC81A28AB917400EBAB31 /* Birthday.swift in Sources */,
 				D877BCDD28AB86FD00A11DDC /* AppDelegate.swift in Sources */,
 				D877BCDF28AB86FD00A11DDC /* SceneDelegate.swift in Sources */,
 				D877BCE728AB86FD00A11DDC /* Birthday_tracker.xcdatamodeld in Sources */,
@@ -289,14 +297,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 285RFT4HL7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Birthday tracker/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "birthday tracker";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,8 +315,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "alexshamrey.Birthday-tracker";
+				PRODUCT_BUNDLE_IDENTIFIER = alexshamrey.Birthdaytracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,14 +329,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 285RFT4HL7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Birthday tracker/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "birthday tracker";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,8 +347,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "alexshamrey.Birthday-tracker";
+				PRODUCT_BUNDLE_IDENTIFIER = alexshamrey.Birthdaytracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
